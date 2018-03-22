@@ -3,6 +3,12 @@ public class Question {
     private int questionDifficulty;
     private String questionCategory;
 
+    public Question(String questionText, int questionDifficulty, String questionCategory) {
+        this.questionText = questionText;
+        this.questionDifficulty = questionDifficulty;
+        this.questionCategory = questionCategory;
+    }
+
     public String getQuestionText() {
         return questionText;
     }
@@ -41,6 +47,15 @@ public class Question {
 
     public int incorrectAnswer3() {
         return incorrectAnswer3();
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "questionText='" + questionText + '\'' +
+                ", questionDifficulty=" + questionDifficulty +
+                ", questionCategory='" + questionCategory + '\'' +
+                '}';
     }
 
     public static void main(String[] args) {
